@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET"])
-def index():
+@app.route("/")
+def home():
     return "Dialogflow Webhook is running!"
 
 @app.route("/webhook", methods=["POST"])
